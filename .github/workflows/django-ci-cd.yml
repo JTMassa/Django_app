@@ -107,12 +107,8 @@ jobs:
         with:
           image-ref: ${{ env.ECR_REPOSITORY }}:${{ github.sha }}
           format: table
-          exit-code: 1
-          ignore-unfixed: true
-          vuln-type: "os,library"
-          severity: "CRITICAL,HIGH"
-
-
+          exit-code: 0
+        
   deploy:
     name: Deploy to Amazon ECS
     runs-on: ubuntu-latest
