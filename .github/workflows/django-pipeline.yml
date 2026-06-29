@@ -2,9 +2,9 @@ name: Django CI/CD Pipeline
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "Django_stuff" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "Django_stuff" ]
   workflow_dispatch:
 
 permissions:
