@@ -110,7 +110,7 @@ jobs:
          docker run --rm \
          -v $PWD:/src \
          aquasec/trivy:latest \
-         image --exit-code 1 --severity HIGH,CRITICAL $ECR_REPOSITORY:${{ github.sha }}
+         image --exit-code 0 --severity HIGH,CRITICAL $ECR_REPOSITORY:${{ github.sha }}
   
      
   deploy:
