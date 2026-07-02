@@ -16,7 +16,7 @@ env:
   ECR_REPOSITORY: django-dashboard
   ECS_CLUSTER: django-cluster
   ECS_SERVICE: django-service
-  ECS_TASK_DEFINITION: .aws/task-definition.json
+  ECS_TASK_DEFINITION: arn:aws:ecs:us-east-1:591735895336:task-definition/Django_TD:2
   CONTAINER_NAME: django-app
 
 jobs:
